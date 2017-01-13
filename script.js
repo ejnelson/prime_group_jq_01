@@ -66,7 +66,7 @@ $(function(){
 					$(this).parent().parent().parent().find('.currentInventory').text(fruitValue);
 					var average=Number($(this).parent().parent().parent().find('.averagePrice').text());
 					switch($(this).parent().parent().parent().find('.fruitName').text()){
-						case 'Apple':
+						case 'Apple price:':
 						appleCounter++;
 						if (appleCounter == 1) {
 							average = change;
@@ -74,7 +74,7 @@ $(function(){
 							average = ((average * (appleCounter-1))+Number(change))/appleCounter;
 						}
 						break;
-						case 'Orange':
+						case 'Orange price:':
 						orangeCounter++;
 						if (orangeCounter == 1) {
 							average = change;
@@ -82,7 +82,7 @@ $(function(){
 							average = ((average * (orangeCounter-1))+Number(change))/orangeCounter;
 						}
 						break;
-						case 'Banana':
+						case 'Banana price:':
 						bananaCounter++;
 						if (bananaCounter == 1) {
 							average = change;
